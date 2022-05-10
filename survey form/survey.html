@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main id="main">
+        <h1 id="title">
+          Muslim youth community survey
+        </h1>
+        <p id="description">
+          help us to grow and build the biggest muslims community
+        </p>
+        <form id="survey-form">
+          <label for="name" id="name-label">
+            name
+          </label><br>
+          <input type="text" placeholder="Enter your name" required id="name">
+      
+          <label for="email" id="email-label">
+            email
+          </label><br>
+          <input type="email" placeholder="Enter your email" required id="email">
+      
+          <label for="number" id="number-label">
+            age
+          </label><br>
+          <input type="number" placeholder="Enter your age" required id="number" min="15" max="70">
+      
+          <label>
+            Which option best describes your desired role?
+      
+          </label><br>
+          <select name="role" id="dropdown">
+            <option disabled selected>pick a role</option>
+            <option value="Software engineer">Software engineer</option>
+            <option value="UI UX designer">UI UX designer</option>
+            <option value="Product manager">Product manager</option>
+          </select>
+          
+              <label>
+              Why are you filling this survey?
+            </label>
+          <div class="formatter">
+            <input type="checkbox" value="To get in touch with the community">
+            <label style="font-size:0.9rem;  margin-top:10px; margin-bottom:10px;">
+              To get in touch with the community
+            </label>
+          </div>
+          
+              <div class="formatter">
+            <input type="checkbox" value="To contribute to the community">
+           <label style="font-size:0.9rem;  margin-top:10px; margin-bottom:10px;">
+              To contribute to the community
+            </label>
+          </div>
+          
+              <div class="formatter">
+            <input type="checkbox" value="Just for fun">
+          <label style="font-size:0.9rem;  margin-top:10px; margin-bottom:10px;">
+              Just for fun
+            </label>
+          </div>
+          
+          
+          
+          
+          
+                  <label>
+              you are ?
+            </label>
+          <div class="formatter">
+            <input type="radio" value="Sunni" name="why">
+            <label style="font-size:0.9rem;  margin-top:10px; margin-bottom:10px;">
+              Sunni
+            </label>
+          </div>
+          
+              <div class="formatter">
+            <input type="radio" value="Shii" name="why">
+           <label style="font-size:0.9rem;  margin-top:10px; margin-bottom:10px;">
+              Shii
+            </label>
+          </div>
+          
+              <div class="formatter">
+            <input type="radio" name="why" value="Sufi">
+          <label style="font-size:0.9rem;  margin-top:10px; margin-bottom:10px;">
+              Sufi
+            </label>
+          </div>
+              <label>
+             suggest something !
+            </label><br>
+          <textarea rows="6" >
+          </textarea>
+          <button type="submit" id="submit">
+            submit
+          </button >
+         
+        </form>
+      
+      </main>
+
+    <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300&display=swap");
+* {
+  margin: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+  padding-bottom:20px;
+  width: 100vw;
+  height: max-content ;
+  background: #010449;
+  color: #ffffff;
+  text-align: center;
+}
+#title {
+  padding-top: 20px;
+  font-family: ubuntu;
+  margin: 0;
+}
+
+#description {
+  font-family: ubuntu;
+  font-style: italic;
+  padding-bottom: 40px;
+}
+label {
+  font-family: ubuntu;
+  text-transform: capitalize;
+}
+#survey-form {
+  width: 70%;
+  text-align: start;
+  margin: auto;
+}
+
+#email , #name , #number {
+  display:block;
+  width: 100%;
+  outline: none;
+  background: #010449;
+  decoration: none;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  padding: 15px 0 15px 15px;
+  color: #fff;
+  font-family: ubuntu;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+#email:focus , #name:focus , #number:focus {
+  background: #010449;
+  border: 2px solid #25cc87;
+  border-radius: 7px;
+  color: #fff;
+  font-family: ubuntu;
+}
+
+select {
+  width: 100%;
+  display: block;
+  background: #010449;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  padding: 15px 0 15px 15px;
+  color: #fff;
+  font-family: ubuntu;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+input[type="radio"],input[type="checkbox"]{
+  height:1rem;
+  width:1rem;
+  margin-right:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.formatter{
+  display:flex;
+  align-items:center;
+  
+}
+
+textarea{
+  width:100%;
+  background: #25cc87;
+
+
+  border: 2px solid #fff;
+  border-radius: 7px;
+  padding: 15px 15px 15px 15px;
+  color: #000;
+  font-family: ubuntu; 
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+    </style>
+</body>
+</html>
