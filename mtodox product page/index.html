@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/82326bfa9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <header id="header">
+        <div id="logo">
+          <p class="logo-text">
+            تطبيق  <br> المهام
+          </p>
+          <img id="header-img" src="https://i.ibb.co/fSDBtx3/Mtodox.png">
+        </div>
+          <nav id="nav-bar">
+            <a class="nav-link" href="#features">
+              ميزات
+            </a>
+        
+            <a class="nav-link" href="#download">
+              تحميل
+            </a>
+            <a class="nav-link" href="#github">
+              كود المشروع
+            </a>
+        
+          </nav>
+        </header>
+        <main>
+        <h2 class="title">
+          هل تريد أن يتم إعلامك بأحدث التغييرات؟
+          
+          </h2>  
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+          
+          <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" name="email">
+        </input>
+        <br>
+          <input id="submit" type="submit">
+          </input>
+          
+        </form>
+        
+        
+        <iframe id="video"
+        src="https://www.youtube.com/embed/lYzuuEpCOyA">
+        </iframe>
+        
+        <h2 class="title">
+        ميزات  
+          </h2> 
+        <section id="features">
+          <div class="feature">
+        <i class="fa-solid fa-moon"></i>
+            </i>
+          <p class="f">
+          الوضع الليلي
+              </p>
+          
+          </div>
+          
+            <div class="feature">
+              
+        <i class="fa-solid fa-database"></i>
+              <p class="f">
+              التخزين المحلي
+              </p>
+          
+        </div>
+          
+            <div class="feature">
+        <i class="fa-solid fa-language"></i>
+             <p class="f">
+              التطبيق بالعربية
+              </p>
+        </div>
+          </section>
+           <section id="download">
+             <h2 class="title">
+        تحميل  
+          </h2> 
+             <a class="download" href="https://www.mediafire.com/file/crb7bd75h8lh90r/mtodox.apk/file" target="_blank">
+               <p class="dow-p">
+                 اضغط للتحميل
+                 <i class="fa-brands fa-android" id="download-button"></i>
+               </p>
+               </a>
+             </section>
+           <section id="github">
+             <h2 class="title">
+        عرض الكود  
+          </h2> 
+             <a class="download" href="https://www.mediafire.com/file/crb7bd75h8lh90r/mtodox.apk/file" target="_blank">
+               <p class="dow-p">
+                 اضغط لعرض الكود
+        
+                 <i class="fa-brands fa-github" id="github-button"></i>
+               </p>
+               </a>
+             </section>
+        </main>
+        
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal&display=swap');
+
+#header-img{
+height:50px;
+width:60px;
+}
+*{
+  background:#BAE8E8;
+  margin:5px 10px 5px 10px;
+
+}
+header{
+  width:100%;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  margin:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:row-reverse;
+}
+nav > a {
+  font-family:tajawal;
+  font-size:1.4rem;
+  text-decoration:none;
+  color:#272343;
+  border:2px solid #272343;
+  border-radius:20px;
+  padding:0 10px 0 10px;
+  margin-left:20px;
+} 
+nav > a:hover{
+  background:#0D7377;
+  color:#fff;
+}
+
+#logo{
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:center;
+}
+.logo-text{
+  font-family:cairo;
+  font-size:1.2rem;
+  margin:0;
+}
+iframe{
+  height:315px;
+  width:50%;
+  border:4px solid #0D7377;
+  border-radius:20px;
+  margin-top:30px;
+}
+
+main{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:80px;
+}
+.title{
+  font-family:tajawal;
+  text-align:center;
+}
+
+input[type="email"]{
+  border:2px solid #0D7377;
+  border-radius:20px;
+  padding:10px;
+  padding-right:0px;
+  width:100%;
+  background:#272343;
+  color:#fff;
+  font-family:tajawal;
+  font-size:20px;
+  margin:0;
+}
+input[type="email"]::placeholder{
+  color:#ffffff;
+}
+
+input[type="submit"]{
+ border:0px solid #0D7377;
+  border-radius:20px;
+  padding:5px;
+  width:50%;
+  background:#0D7377;
+  color:#fff;
+  font-family:tajawal;
+  font-size:20px;
+}
+
+form{
+  text-align:center;
+}
+#nav-bar{
+  display:flex;
+  flex-direction:row-reverse;
+  flex-wrap:wrap;
+  justify-content : start;
+  text-align:center;
+}
+#features{
+  display:flex;
+  width:50%;
+}
+
+.feature{
+  text-align:center;
+  border-radius:5px;
+padding:10px;
+width:40%;
+height:100px;
+background:#0D7377;
+ transition:1s ease;
+  margin-top:10px
+}
+
+.feature > i{
+  margin:auto;
+  position:relative;
+  bottom:20%;
+  border-radius:20px;
+  background: #fff;
+  color:#323232;
+  font-size:25px;
+}
+.f{
+  font-family:tajawal;
+  background:transparent;
+  color:#fff;
+  text-align:center
+}
+
+.feature:hover{
+  transform: scale(1.1);
+
+}
+#download , #github{
+  text-align:center;
+}
+#download-button{
+  border-radius:20px;
+  background: transparent;
+  color:#97C03E;
+  font-size:23px;
+}
+
+#github-button{
+  border-radius:20px;
+  background: transparent;
+  color:#ffffff;
+  font-size:23px;
+}
+.download{
+  text-decoration:none;  
+
+}
+.dow-p{
+  color:#fff;
+  background:#000000;
+  font-family:tajawal;
+    display:flex;
+  align-items:center;
+  padding:5px;
+  border-radius:7px;
+  
+}
+
+
+
+@media (max-width:570px){
+  
+  
+main{
+  margin-top:110px;
+}
+}
+
+
+
+@media (max-width:396px){
+  
+  
+main{
+  margin-top:140px;
+}
+}
+@media (max-width:361px){
+  
+  
+main{
+  margin-top:160px;
+}
+
+}
+
+@media (max-width:491px){
+  
+  #features{
+    flex-direction:column;
+    align-items:center;    
+  }
+}
+</style>
+
+
+</body>
+</html>
